@@ -2,7 +2,7 @@ numpy>=1.26
 scipy>=1.11
 matplotlib>=3.8
 sgp4>=2.23
-# Optional (enable ECEF->geodetic): 
+# Optional (enable ECEF->geodetic):
 pyproj>=3.6
 # Optional (pretty map with coastlines):
 cartopy>=0.22
