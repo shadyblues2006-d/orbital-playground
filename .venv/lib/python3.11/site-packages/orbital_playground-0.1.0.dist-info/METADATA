@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: orbital-playground
+Version: 0.1.0
+Summary: A tiny Python toolkit for basic orbital calculations and ground tracks.
+Author-email: Your Name <you@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourname/orbital-playground
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.11
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: sgp4>=2.23
+Provides-Extra: geo
+Requires-Dist: pyproj>=3.6; extra == "geo"
+Requires-Dist: cartopy>=0.22; extra == "geo"
+Dynamic: license-file

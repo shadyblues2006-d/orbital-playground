@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbital-playground"
+version = "0.1.0"
+description = "A tiny Python toolkit for basic orbital calculations and ground tracks."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "sgp4>=2.23"
+]
+
+[project.optional-dependencies]
+geo = ["pyproj>=3.6", "cartopy>=0.22"]
+
+[project.urls]
+Homepage = "https://github.com/yourname/orbital-playground"
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+select = ["E", "F", "I", "UP", "B", "W"]
+ignore = []
+fix = true
+src = ["orbital_playground", "tests"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["orbital_playground*"]

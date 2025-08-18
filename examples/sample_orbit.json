@@ -1,0 +1,9 @@
+{
+  "alt_km": 500.0,
+  "inc_deg": 51.6,
+  "raan_deg": 0.0,
+  "u0_deg": 0.0,
+  "start_time": "2025-01-01T00:00:00Z",
+  "duration_s": 5400,
+  "dt_s": 10
+}
